@@ -662,12 +662,6 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-    meta:
-      id: fld_3119aabd1efa470d9e4c0928dfc5d62c
-      created: 1762792458527
-      modified: 1762792458527
-      sortKey: -1762792458527
-      description: ""
     children:
       - name: usuario
         meta:
