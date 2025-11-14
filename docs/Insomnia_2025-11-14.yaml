@@ -1,0 +1,728 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1740747688230
+  modified: 1740747688230
+  description: ""
+collection:
+  - name: escola
+    meta:
+      id: fld_c3a60fe062704f339b4773cc5c8ae89d
+      created: 1762368159163
+      modified: 1762368159163
+      sortKey: -1762368159163
+      description: ""
+    children:
+      - name: local
+        meta:
+          id: fld_d389fd13661f4263bb3380980f4984b0
+          created: 1761067051530
+          modified: 1762368172447
+          sortKey: -1762368168293
+          description: ""
+        children:
+          - url: localhost:3000
+            name: TESTE
+            meta:
+              id: req_6abf4180bdc34373827b6fbaa9745eec
+              created: 1761067064245
+              modified: 1761067075696
+              isPrivate: false
+              description: ""
+              sortKey: -1761067064245
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.1
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - name: professor
+            meta:
+              id: fld_087eef633a8e47c4b5cecee21eb4cf0b
+              created: 1761067061930
+              modified: 1761067061930
+              sortKey: -1761067061930
+              description: ""
+            children:
+              - url: localhost:3000/professores
+                name: READ
+                meta:
+                  id: req_69c616d039a944cc8130d57aaedc782d
+                  created: 1761067088156
+                  modified: 1762364582007
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1761067093943
+                method: GET
+                headers:
+                  - name: User-Agent
+                    value: insomnia/11.6.1
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: localhost:3000/professores
+                name: CREATE
+                meta:
+                  id: req_77e726821e554b50bda7f2785fd8d4eb
+                  created: 1761067111060
+                  modified: 1762364759613
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1761067079094
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    	{
+                    		"nome": "João Rego de Barros",
+                    		"email": "joao@gmail.com",
+                    		"senha": "senha123"
+                    	}
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/11.6.1
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: http://localhost:3000/login
+                name: LOGIN
+                meta:
+                  id: req_e5dff719403e4806b05e22a2113a1cbb
+                  created: 1761067156348
+                  modified: 1762367004178
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1761067071669.5
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    	{
+                    		"email": "robson@email.com",
+                    		"senha": "senha123"
+                    	}
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/11.6.1
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+          - name: turma
+            meta:
+              id: fld_4a6ff3a47bf24c918402891731dfb98a
+              created: 1761067187775
+              modified: 1761067187775
+              sortKey: -1761067056730
+              description: ""
+            children:
+              - url: localhost:3000/turmas
+                name: READ
+                meta:
+                  id: req_6b8a37bffe7041c28677c2fe2b74cd46
+                  created: 1761067187779
+                  modified: 1762367909872
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1761067093943
+                method: GET
+                headers:
+                  - name: User-Agent
+                    value: insomnia/11.6.1
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: localhost:3000/turmas/7
+                name: DELETE
+                meta:
+                  id: req_16af6c0c9fec47eeaaa33c336f96f905
+                  created: 1761067187782
+                  modified: 1762367903908
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1761067079094
+                method: DELETE
+                headers:
+                  - name: User-Agent
+                    value: insomnia/11.6.1
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: localhost:3000/turmas
+                name: CREATE
+                meta:
+                  id: req_5f5e123f89e74d57ab39296822054942
+                  created: 1761067187786
+                  modified: 1762367454623
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1761067086518.5
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    	{
+                    		"nome": "Esmalteria",
+                    		"professorId": 3
+                    	}
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/11.6.1
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: localhost:3000/turmas/8
+                name: UPDATE
+                meta:
+                  id: req_1789a3c46150448399cb76b2c7163102
+                  created: 1762367929667
+                  modified: 1762367942260
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1761067082806.25
+                method: PATCH
+                body:
+                  mimeType: application/json
+                  text: |-
+                    	{
+                    		"nome": "Esmalteria fina",
+                    		"professorId": 3
+                    	}
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/11.6.1
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+          - name: atividades
+            meta:
+              id: fld_d9d59afbe55747b19199bd22215acf16
+              created: 1761067329022
+              modified: 1761067329022
+              sortKey: -1761067054130
+              description: ""
+            children:
+              - url: localhost:3000/atividades
+                name: READ
+                meta:
+                  id: req_149e5a5949c6451ca0df089c3f0e3fa2
+                  created: 1761067329025
+                  modified: 1762368069838
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1761067093943
+                method: GET
+                headers:
+                  - name: User-Agent
+                    value: insomnia/11.6.1
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: localhost:3000/atividades
+                name: CREATE
+                meta:
+                  id: req_1a96c6b409c04566bdb5128927bb3bfc
+                  created: 1761067329030
+                  modified: 1762368090701
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1761067092086.875
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    	{
+                    		"descricao": "Lista de exercícios",
+                    		"turmaId": 2
+                    	}
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/11.6.1
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: localhost:3000/atividades/7
+                name: DELETE
+                meta:
+                  id: req_e0d1c0b803464fd38eee610e890e57e9
+                  created: 1761155410872
+                  modified: 1762368129796
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1761067090230.75
+                method: DELETE
+                headers:
+                  - name: User-Agent
+                    value: insomnia/11.6.1
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+      - name: vercel
+        meta:
+          id: fld_005090554b87455eba8bcea6bb66f068
+          created: 1762368179705
+          modified: 1762369334880
+          sortKey: -1762368163728
+          description: ""
+        children:
+          - url: https://escola-api-2025-b.vercel.app/
+            name: TESTE
+            meta:
+              id: req_98eb81d3a7784740be7e24bf5bf1438f
+              created: 1762368179709
+              modified: 1762369345424
+              isPrivate: false
+              description: ""
+              sortKey: -1761067064245
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.1
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - name: professor
+            meta:
+              id: fld_5847173ad1fc4adaafe75bf099085182
+              created: 1762368179712
+              modified: 1762368179712
+              sortKey: -1761067061930
+              description: ""
+            children:
+              - url: https://escola-api-2025-b.vercel.app//professores
+                name: READ
+                meta:
+                  id: req_daad698599c64ad2af774c46d28c9ee6
+                  created: 1762368179715
+                  modified: 1762369353541
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1761067093943
+                method: GET
+                headers:
+                  - name: User-Agent
+                    value: insomnia/11.6.1
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://escola-api-2025-b.vercel.app/professores
+                name: CREATE
+                meta:
+                  id: req_3f6a6258f21d45dd88f005ef6006deea
+                  created: 1762368179717
+                  modified: 1762369459965
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1761067079094
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    	{
+                    		"nome": "João Rego de Barros",
+                    		"email": "joao@gmail.com",
+                    		"senha": "senha123"
+                    	}
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/11.6.1
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://escola-api-2025-b.vercel.app/login
+                name: LOGIN
+                meta:
+                  id: req_c69c69e990b84c56870a2fe6dc10eb36
+                  created: 1762368179720
+                  modified: 1762369465483
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1761067071669.5
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    	{
+                    		"email": "robson@email.com",
+                    		"senha": "senha123"
+                    	}
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/11.6.1
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+          - name: turma
+            meta:
+              id: fld_afc4ae96b9e6414c8af8346b45ac67ad
+              created: 1762368179722
+              modified: 1762368179722
+              sortKey: -1761067056730
+              description: ""
+            children:
+              - url: https://escola-api-2025-b.vercel.app/turmas
+                name: READ
+                meta:
+                  id: req_218cf9f4a76d49f5918bb323f4be1fa6
+                  created: 1762368179724
+                  modified: 1762369494871
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1761067093943
+                method: GET
+                headers:
+                  - name: User-Agent
+                    value: insomnia/11.6.1
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: localhost:3000/turmas/7
+                name: DELETE
+                meta:
+                  id: req_05978ce0a0c140888b0ab7f4e6aba8d1
+                  created: 1762368179727
+                  modified: 1762368179727
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1761067079094
+                method: DELETE
+                headers:
+                  - name: User-Agent
+                    value: insomnia/11.6.1
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://escola-api-2025-b.vercel.app/turmas
+                name: CREATE
+                meta:
+                  id: req_1ef40c9971d4406382d2b8a219e6c3d9
+                  created: 1762368179731
+                  modified: 1762369500843
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1761067086518.5
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    	{
+                    		"nome": "Esmalteria",
+                    		"professorId": 3
+                    	}
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/11.6.1
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://escola-api-2025-b.vercel.app/turmas/5
+                name: UPDATE
+                meta:
+                  id: req_14a5db69ee724ce6bd7c7304b66e9e4a
+                  created: 1762368179735
+                  modified: 1762369526246
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1761067082806.25
+                method: PATCH
+                body:
+                  mimeType: application/json
+                  text: |-
+                    	{
+                    		"nome": "Esmalteria fina",
+                    		"professorId": 3
+                    	}
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/11.6.1
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+          - name: atividades
+            meta:
+              id: fld_f1d6ee60989b4a71b898c5ab8b42c908
+              created: 1762368179738
+              modified: 1762368179738
+              sortKey: -1761067054130
+              description: ""
+            children:
+              - url: https://escola-api-2025-b.vercel.app/atividades
+                name: READ
+                meta:
+                  id: req_c914dd62b58045519653a9b3a3e8b918
+                  created: 1762368179742
+                  modified: 1762369371613
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1761067093943
+                method: GET
+                headers:
+                  - name: User-Agent
+                    value: insomnia/11.6.1
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://escola-api-2025-b.vercel.app/atividades
+                name: CREATE
+                meta:
+                  id: req_2795cf3df0654e13aaa49bac4a9daadd
+                  created: 1762368179745
+                  modified: 1762369570600
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1761067092086.875
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    	{
+                    		"descricao": "Lista de exercícios",
+                    		"turmaId": 2
+                    	}
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/11.6.1
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://escola-api-2025-b.vercel.app/atividades/7
+                name: DELETE
+                meta:
+                  id: req_f2e6c6ace9c44d569246f2da1f880844
+                  created: 1762368179747
+                  modified: 1762369656304
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1761067090230.75
+                method: DELETE
+                headers:
+                  - name: User-Agent
+                    value: insomnia/11.6.1
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://escola-api-2025-b.vercel.app/atividades/7
+                name: UPDATE
+                meta:
+                  id: req_2b0f1dd1ed644d31bc0ed5200e839ef1
+                  created: 1762369587307
+                  modified: 1762369598469
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1761067091158.8125
+                method: PATCH
+                body:
+                  mimeType: application/json
+                  text: |-
+                    	{
+                    		"descricao": "Lista de exercícios lindos",
+                    		"turmaId": 2
+                    	}
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/11.6.1
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+    meta:
+      id: fld_3119aabd1efa470d9e4c0928dfc5d62c
+      created: 1762792458527
+      modified: 1762792458527
+      sortKey: -1762792458527
+      description: ""
+    children:
+      - name: usuario
+        meta:
+          id: fld_f6fa2c110e04430f8049d5311762f954
+          created: 1762792488000
+          modified: 1762792491228
+          sortKey: -1762792463900
+          description: ""
+      - name: produto
+        meta:
+          id: fld_c67df17d176548a7a00b1a2dd5e09203
+          created: 1762795546728
+          modified: 1762795546728
+          sortKey: -1762792461213.5
+          description: ""
+      - name: producao
+        meta:
+          id: fld_6bd3703ba7b8491b83f1b5d65ffd4dba
+          created: 1762795923288
+          modified: 1762795923288
+          sortKey: -1762792459870.25
+          description: ""
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1740747698883
+    modified: 1753445624242
+  cookies:
+    - key: accessToken
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTM0NDU2MjQsImV4cCI6MTc1MzQ0NTY4NH0.oX8vDJSX8XmZTpP5_gA0_uFU50iv_r3bgSgGdFMAba8
+      maxAge: 60
+      domain: dummyjson.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: true
+      creation: 2025-07-21T11:32:13.611Z
+      lastAccessed: 2025-07-25T12:13:44.242Z
+      id: 9b286ebf-5f4a-4778-a956-e2c9222a23aa
+    - key: refreshToken
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTM0NDU2MjQsImV4cCI6MTc1NjAzNzYyNH0.9ufk7JL3DoW76fgrbE0jN-R43peNFhctTEpBt33kf3U
+      maxAge: 60
+      domain: dummyjson.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: true
+      creation: 2025-07-21T11:32:13.613Z
+      lastAccessed: 2025-07-25T12:13:44.242Z
+      id: 9f8a406d-bee2-4b7a-ad9a-25494370667f
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1740747698766
+    modified: 1740747698766
+    isPrivate: false
