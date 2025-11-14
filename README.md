@@ -37,3 +37,4 @@ npx prisma db seed
 ```bash
 npm run dev
 ```
+Teste
