@@ -662,28 +662,6 @@ collection:
                     send: true
                     store: true
                   rebuildPath: true
-    children:
-      - name: usuario
-        meta:
-          id: fld_f6fa2c110e04430f8049d5311762f954
-          created: 1762792488000
-          modified: 1762792491228
-          sortKey: -1762792463900
-          description: ""
-      - name: produto
-        meta:
-          id: fld_c67df17d176548a7a00b1a2dd5e09203
-          created: 1762795546728
-          modified: 1762795546728
-          sortKey: -1762792461213.5
-          description: ""
-      - name: producao
-        meta:
-          id: fld_6bd3703ba7b8491b83f1b5d65ffd4dba
-          created: 1762795923288
-          modified: 1762795923288
-          sortKey: -1762792459870.25
-          description: ""
 cookieJar:
   name: Default Jar
   meta:
